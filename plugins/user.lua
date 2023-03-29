@@ -9,4 +9,11 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+{
+      'tzachar/cmp-tabnine',
+      requires = 'hrsh7th/nvim-cmp',
+      config = function()
+        require("configs.tabnine").config()
+      end,
+    },
 }
