@@ -1,27 +1,4 @@
 return {
-   plugins = {
-    init = {
-      {
-        "tzachar/cmp-tabnine",
-        requires = "hrsh7th/nvim-cmp",
-        run = "./install.sh",
-        config = function()
-          local tabnine = require "cmp_tabnine.config"
-          tabnine:setup {
-            max_lines = 1000,
-            max_num_results = 20,
-            sort = true,
-            run_on_every_keystroke = true,
-            snippet_placeholder = "..",
-            ignored_file_types = {},
-            show_prediction_strength = false,
-          }
-         astronvim.add_cmp_source({ name = "cmp_tabnine", priority=1000, max_item_count = 7})
-        end,
-      },
-    },
-  },
-  
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use
@@ -82,7 +59,7 @@ return {
     performance = {
       rtp = {
         -- customize default disabled vim plugins
-        disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
+        disabled_plugins = { "tohtml", "gzip",  "zipPlugin", "netrwPlugin", "tarPlugin" },
       },
     },
   },
