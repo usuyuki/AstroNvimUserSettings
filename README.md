@@ -1,5 +1,15 @@
 # AstroNvim の設定
 
+https://github.com/AstroNvim/astrocommunity
+
+https://github.com/goolord/alpha-nvim/discussions/16
+
+## ホーム画像
+
+https://dom111.github.io/image-to-ansi/
+
+## 簡単に入る系のプラグイン
+
 ## 初回
 
 基本自動で入る

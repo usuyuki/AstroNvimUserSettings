@@ -1,24 +1,51 @@
 return {
   -- customize alpha options
   {
-    "goolord/alpha-nvim",
-    opts = function(_, opts)
-      -- customize the dashboard header
-      opts.section.header.val = {
-        " █████  ███████ ████████ ██████   ██████",
-        "██   ██ ██         ██    ██   ██ ██    ██",
-        "███████ ███████    ██    ██████  ██    ██",
-        "██   ██      ██    ██    ██   ██ ██    ██",
-        "██   ██ ███████    ██    ██   ██  ██████",
-        " ",
-        "    ███    ██ ██    ██ ██ ███    ███",
-        "    ████   ██ ██    ██ ██ ████  ████",
-        "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-        "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-        "    ██   ████   ████   ██ ██      ██",
-      }
-      return opts
-    end,
+   "goolord/alpha-nvim",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
+  config = function()
+    local alpha = require("alpha")
+    local dashboard = require("alpha.themes.dashboard")
+    require("alpha.term")
+
+    local header = {
+      type = "terminal",
+      command = "cat | " .. os.getenv("HOME") .. "/.config/nvim/lua/user/topImage.sh",
+      width = 100,--画像サイズ以上でないと改行で壊れる
+      height = 50, -- 想定の半分で良い 100*100の画像なら 50
+      opts = {
+        position = "center",
+        hl = "String",
+      },
+    }
+
+    local buttons = {
+      type = "group",
+      val = {
+        { type = "text", val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
+        { type = "padding", val = 1 },
+        dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
+        dashboard.button("e", " " .. " New file", ":ene <BAR> startinsert <CR>"),
+        dashboard.button("r", " " .. " Recent files", ":Telescope oldfiles <CR>"),
+        dashboard.button("t", " " .. " Find text", ":Telescope live_grep <CR>"),
+        dashboard.button("q", " " .. " Quit", ":qa<CR>"),
+      },
+    }
+
+    local top_padding = vim.fn.max({ 2, vim.fn.floor(vim.fn.winheight(0) * 0.2) })
+
+    local config = {
+      layout = {
+        { type = "padding", val = top_padding },
+        header,
+        { type = "padding", val = 2 },
+        { type = "padding", val = 2 },
+        buttons,
+      },
+    }
+
+    alpha.setup(config)
+  end,
   },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
