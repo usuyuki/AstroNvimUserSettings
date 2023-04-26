@@ -29,3 +29,22 @@ copilot の候補確定は <C-l>
 ```
 :WakaTimeToday
 ```
+
+# neo-tree のコマンド
+
+https://github.com/nvim-neo-tree/neo-tree.nvim
+s: 右に開く
+S: したに開く
+P: プレビュー
+<,>: buff,git などに移動
+R: リフレッシュ
+a: add file
+d: delete file
+r: rename file
+y: copy file
+p: paste file
+c: copy file
+x: cut file
+m: move file
+o: open directory
+H: toggle hidden files
