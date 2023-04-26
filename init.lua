@@ -80,5 +80,21 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+
+
+    -- 独自追加プラグイン
+    -- AAで画像表示するための設定
+    require('image').setup {
+    render = {
+      min_padding = 3,
+      show_label = true,
+      use_dither = true,
+      foreground_color = true,
+      background_color = true
+    },
+    events = {
+      update_on_nvim_resize = true,
+    },
+  }
   end,
 }
