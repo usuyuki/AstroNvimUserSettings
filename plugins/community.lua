@@ -21,6 +21,15 @@ return {
       },
     },
   },
+  -- ■言語パック系
+  -- https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack
+  { import = "astrocommunity.pack.php" },
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.svelte" },
+  { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.typescript" },
+
+
   -- https://github.com/wakatime/vim-wakatime
   -- 移動したときにインデントの範囲を表示してくれるやつ
   { import = "astrocommunity.media.vim-wakatime" },
