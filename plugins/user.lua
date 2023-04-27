@@ -17,5 +17,10 @@ return {
       'nvim-lua/plenary.nvim',
       'm00qek/baleia.nvim',
   },
+  {
+  -- https://github.com/mg979/vim-visual-multi
+  -- VSCodeみたいなマルチカーソルプラグイン
+  'mg979/vim-visual-multi',
+  }
 
 }

@@ -29,13 +29,18 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.typescript" },
 
+  -- https://github.com/wakatime/vim-wakatime
+  -- ""みたいな囲みをいい感じにするやつ
+  { import = "astrocommunity.motion.mini-surround" },
 
   -- https://github.com/wakatime/vim-wakatime
   -- 移動したときにインデントの範囲を表示してくれるやつ
   { import = "astrocommunity.media.vim-wakatime" },
+
   -- https://github.com/echasnovski/mini.animate
   -- 移動したときにインデントの範囲を表示してくれるやつ
   { import = "astrocommunity.scrolling.mini-animate" },
+
   -- https://neovimcraft.com/plugin/m4xshen/smartcolumn.nvim/index.html
   -- 長すぎると線出してくれるやつ
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
