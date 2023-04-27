@@ -3,24 +3,11 @@ return {
   "AstroNvim/astrocommunity",
   -- example of imporing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
+
+  -- ■カラースキーマ
   { import = "astrocommunity.colorscheme.kanagawa", enabled = true },
-  -- github copilot
-  { import = "astrocommunity.completion.copilot-lua-cmp" },
-  { -- further customize the options set by the community
-    "copilot.lua",
-    opts = {
-      suggestion = {
-        keymap = {
-          accept = "<C-l>",
-          accept_word = false,
-          accept_line = false,
-          next = "<C-.>",
-          prev = "<C-,>",
-          dismiss = "<C/>",
-        },
-      },
-    },
-  },
+  { import = "astrocommunity.colorscheme.everforest", enabled = true },
+
   -- ■言語パック系
   -- https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack
   { import = "astrocommunity.pack.php" },
@@ -52,5 +39,23 @@ return {
       custom_colorcolumn = {},
       scope = "file",
     }
+  },
+
+  -- github copilot
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { -- further customize the options set by the community
+    "copilot.lua",
+    opts = {
+      suggestion = {
+        keymap = {
+          accept = "<C-l>",
+          accept_word = false,
+          accept_line = false,
+          next = "<C-.>",
+          prev = "<C-,>",
+          dismiss = "<C/>",
+        },
+      },
+    },
   },
 }
