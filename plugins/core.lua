@@ -11,6 +11,7 @@ return {
     local header = {
       type = "terminal",
       command = "cat | " .. os.getenv("HOME") .. "/.config/nvim/lua/user/topImage.sh",
+      -- command = "cat | " .. os.getenv("HOME") .. "/.config/nvim/lua/user/topImageUsuyukiIcon.sh",
       width = 68,--画像サイズ以上でないと改行で壊れる
       height = 34, -- 想定の半分で良い 100*100の画像なら 50
       opts = {
