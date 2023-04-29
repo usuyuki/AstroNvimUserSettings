@@ -10,13 +10,21 @@ return {
 
   -- ■言語パック系
   -- https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack
-  { import = "astrocommunity.pack.php" },
+  -- { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.astro" },
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.bash" },
 
-  -- https://github.com/wakatime/vim-wakatime
+
+  -- https://github.com/echasnovski/mini.surround
   -- ""みたいな囲みをいい感じにするやつ
   { import = "astrocommunity.motion.mini-surround" },
 
