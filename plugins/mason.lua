@@ -1,11 +1,21 @@
 -- customize mason plugins
+-- 複数ファイルにすると読めなくなるので1ファイルで
 return {
   -- use mason-lspconfig to configure LSP installations
   {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
-      -- ensure_installed = { "lua_ls" },
+      ensure_installed = {
+        -- php
+        "intelephense",
+        -- c
+        "clangd",
+        -- tex
+        -- ltex-lsもあるが、texlabのほうが更新多めでrust製なのでtexlab採用。とはいえltex-lsもkotilin製で気になる
+        "texlab",
+        
+      },
     },
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
@@ -13,14 +23,24 @@ return {
     "jay-babu/mason-null-ls.nvim",
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
-      -- ensure_installed = { "prettier", "stylua" },
+      ensure_installed = {
+        -- php
+        "php-cr-fixer",
+        "phpstan",
+        -- c
+        "cpplint",
+        "clang-format",
+        -- tex
+        "vale",
+        "latexindent",
+      },
     },
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
-      -- ensure_installed = { "python" },
+      ensure_installed = { "php" },
     },
   },
 }
