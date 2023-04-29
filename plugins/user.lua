@@ -21,6 +21,11 @@ return {
   -- https://github.com/mg979/vim-visual-multi
   -- VSCodeみたいなマルチカーソルプラグイン
   'mg979/vim-visual-multi',
-  }
+  },
+  {
+    -- https://github.com/shawncplus/phpcomplete.vim
+    -- phpの補完周り追加
+    'shawncplus/phpcomplete.vim',
+  },
 
 }
