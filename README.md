@@ -4,7 +4,7 @@ https://github.com/AstroNvim/astrocommunity
 
 https://github.com/goolord/alpha-nvim/discussions/16
 
-## ホーム画像
+## ホーム画像生成
 
 https://dom111.github.io/image-to-ansi/
 
@@ -14,14 +14,12 @@ https://dom111.github.io/image-to-ansi/
 
 基本自動で入る
 
-copilot の認証だけ必要
-
+copilot の認証
 ```
 :Copilot auth
 ```
 
-copilot の候補確定は <C-l>
-
+WakaTimeの認証
 ```
 :WakaTimeApiKey
 ```
@@ -30,7 +28,7 @@ copilot の候補確定は <C-l>
 :WakaTimeToday
 ```
 
-# neo-tree のコマンド
+# neo-tree のコマンドメモ
 
 https://github.com/nvim-neo-tree/neo-tree.nvim
 s: 右に開く
