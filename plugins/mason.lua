@@ -14,6 +14,8 @@ return {
         -- tex
         -- ltex-lsもあるが、texlabのほうが更新多めでrust製なのでtexlab採用。とはいえltex-lsもkotilin製で気になる
         "texlab",
+        -- markdown 色々LSPはあるが一番更新が盛んなものを使用
+        "marksman"
         
       },
     },
@@ -24,8 +26,9 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
+        "prettier",
         -- php
-        "php-cr-fixer",
+        "php-cs-fixer",
         "phpstan",
         -- c
         "cpplint",
