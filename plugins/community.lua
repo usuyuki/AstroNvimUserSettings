@@ -22,6 +22,7 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.astro" },
 
 
   -- https://github.com/echasnovski/mini.surround
