@@ -15,8 +15,7 @@ return {
         -- ltex-lsもあるが、texlabのほうが更新多めでrust製なのでtexlab採用。とはいえltex-lsもkotilin製で気になる
         "texlab",
         -- markdown 色々LSPはあるが一番更新が盛んなものを使用
-        "marksman"
-        
+        "marksman",
       },
     },
   },
