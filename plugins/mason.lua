@@ -16,6 +16,8 @@ return {
         "texlab",
         -- markdown 色々LSPはあるが一番更新が盛んなものを使用
         "marksman",
+        -- rust
+        "rust_analyzer"
       },
     },
   },
