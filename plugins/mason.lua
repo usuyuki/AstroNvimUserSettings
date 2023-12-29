@@ -6,9 +6,12 @@ return {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
+      -- (2) LSP
       ensure_installed = {
         -- php
         "intelephense",
+        -- go
+        "gopls",
         -- c
         "clangd",
         -- tex
@@ -17,7 +20,9 @@ return {
         -- markdown 色々LSPはあるが一番更新が盛んなものを使用
         "marksman",
         -- rust
-        "rust_analyzer"
+        "rust_analyzer",
+        -- ruby
+        "ruby_ls",
       },
     },
   },
@@ -26,11 +31,14 @@ return {
     "jay-babu/mason-null-ls.nvim",
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
+      -- (4) Linter (5) Formatter
       ensure_installed = {
         "prettier",
         -- php
         "php-cs-fixer",
         "phpstan",
+        -- go
+        "staticcheck",
         -- c
         "cpplint",
         "clang-format",
