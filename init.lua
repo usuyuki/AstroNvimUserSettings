@@ -19,8 +19,9 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "everforest",
-  -- colorscheme = "kanagawa",
+  -- ↓こことplugins/community.luaも変える
+  -- colorscheme = "everforest",
+  colorscheme = "kanagawa",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {

@@ -15,11 +15,13 @@ https://dom111.github.io/image-to-ansi/
 基本自動で入る
 
 copilot の認証
+
 ```
 :Copilot auth
 ```
 
 WakaTimeの認証
+
 ```
 :WakaTimeApiKey
 ```

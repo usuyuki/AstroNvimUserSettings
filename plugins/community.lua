@@ -5,8 +5,8 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   -- ■カラースキーマ
-  -- { import = "astrocommunity.colorscheme.kanagawa", enabled = true },
-  { import = "astrocommunity.colorscheme.everforest", enabled = true },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled = true },
+  { import = "astrocommunity.colorscheme.everforest", enabled = false },
 
   -- ■言語パック系
   -- https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack
